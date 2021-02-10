@@ -4,6 +4,8 @@
   - [Optimization Steps](#optimization-steps)
   - [Profiler-based Optimization](#profiler-based-optimization)
   - [Cython and C](#cython-and-c)
+    - [Cython](#cython)
+    - [OpenMP](#openmp)
 
 ## Optimization Steps
 
@@ -14,7 +16,7 @@
 - Complexity
   - analyze algorithm details and analyze performance
 - Details
-  - Hashing, caching, memory, [SIMD](https://en.wikipedia.org/wiki/SIMD#:~:text=Single%20instruction%2C%20multiple%20data%20(SIMD,on%20multiple%20data%20points%20simultaneously.)
+  - Hashing, caching, memory, [SIMD](https://en.wikipedia.org/wiki/SIMD#:~:text=Single%20instruction%2C%20multiple%20data%20(SIMD,on%20multiple%20data%20points%20simultaneously.))
 - Parrallel, process and threading
 
 ## Profiler-based Optimization
@@ -42,7 +44,7 @@ For Python, usually we need to
             - [cache miss](https://hazelcast.com/glossary/cache-miss/)
       - [Register](https://en.wikipedia.org/wiki/Processor_register)
         - where CPU works
-    - [SIMD](https://en.wikipedia.org/wiki/SIMD#:~:text=Single%20instruction%2C%20multiple%20data%20(SIMD,on%20multiple%20data%20points%20simultaneously.)
+    - [SIMD](https://en.wikipedia.org/wiki/SIMD#:~:text=Single%20instruction%2C%20multiple%20data%20(SIMD,on%20multiple%20data%20points%20simultaneously.))
         - [OpenMP](https://en.wikipedia.org/wiki/OpenMP)
         - [intrinsics](https://en.wikipedia.org/wiki/Intrinsic_function)
           - work on compiler
@@ -66,12 +68,21 @@ Python Profilers
 
 ## Cython and C
 
-- [Cython](https://cython.readthedocs.io/en/latest/src/tutorial/cython_tutorial.html)
-  - compatible with Python
-  - C syntax
-    - static class
-  - code protection in distribution
-  - Compling 
-    - Use [setuptools](https://setuptools.readthedocs.io/en/latest/) or [disutils](https://docs.python.org/3/library/distutils.html)
-      - notice compiler flags and gbd_debug choices
-      - [building Cython code](https://cython.readthedocs.io/en/latest/src/quickstart/build.html)
+### [Cython](https://cython.readthedocs.io/en/latest/src/tutorial/cython_tutorial.html)
+
+- compatible with Python
+- C syntax
+  - static class
+- code protection in distribution
+- Compling 
+  - Use [setuptools](https://setuptools.readthedocs.io/en/latest/) or [disutils](https://docs.python.org/3/library/distutils.html)
+    - notice compiler flags and gbd_debug choices
+    - [building Cython code](https://cython.readthedocs.io/en/latest/src/quickstart/build.html)
+
+### [OpenMP](https://www.openmp.org/)
+
+- hard grammar, C-like
+  - [Introduction](https://computing.llnl.gov/tutorials/openMP/)
+- parrallel programming basics
+  - [race condition](https://www.baeldung.com/cs/race-conditions)
+  - mutex

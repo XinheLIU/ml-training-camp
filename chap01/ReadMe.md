@@ -2,9 +2,8 @@
 
 - [Chapter 01: Python](#chapter-01-python)
   - [Environment Set-up for Machine Learning](#environment-set-up-for-machine-learning)
-  - [Set up Machine Learning Enviroment](#set-up-machine-learning-enviroment)
-  - [Python Review](#python-review)
   - [R Review](#r-review)
+  - [Python Review](#python-review)
 
 ## Environment Set-up for Machine Learning
 
@@ -54,33 +53,22 @@
 ## Python Review
 
 - python error handling
-- python functional programming
+- Functional programming in Python
   - [Monad](https://github.com/jasondelaat/pymonad.git)
   - lazy evaluation
   - multi-thread
+  - map reduce
+  - scan
+  - associate scan
 - python variables and assignment
 - pythonic class basics
-    - https://docs.python.org/3/library/operator.html
-    - https://www.geeksforgeeks.org/operator-overloading-in-python/
-    - magic list
-    - decorator (data class, etc)
+  - [operators](https://docs.python.org/3/library/operator.html)
+  - [operator overloading](https://www.geeksforgeeks.org/operator-overloading-in-python/)
+  - [magic commands](https://www.tutorialsteacher.com/python/magic-methods-in-python)
+  - decorators
+    - [data class](https://docs.python.org/3/library/dataclasses.html)
+    - func_tools, partial
 - python logging
-- data class, sphinx
-    - https://www.sphinx-doc.org/en/master/
+  - logging package
+  - [Sphinix](https://www.sphinx-doc.org/en/master/)
 - syntactic sugar
-    - decorator (package)
-        - func_tools, partial
-        - design pattern
-- functional programming
-    - map reduce
-    - scan
-    - associate scan
-
-
-- Colab and Jupyter Notebook. 
-- How to set up a deep learning working environment.
-- A brief review of Python and R.
-- Exceptional handling with an emphasis on functional programming techniques.
-- Functional programming in Python.
-- Decorator.
-- Dataclass and docstring. 

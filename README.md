@@ -5,7 +5,7 @@
     - [Aims](#aims)
     - [Course Material Update](#course-material-update)
     - [Course Language](#course-language)
-  - [Course Outline (Planned; continuously updated)](#course-outline-planned-continuously-updated)
+  - [Course Outline](#course-outline)
   - [Chapter 00: the Gap between Machine Learing Text Book and Engineering](#chapter-00-the-gap-between-machine-learing-text-book-and-engineering)
     - [Chapter 01: Python](#chapter-01-python)
     - [Chapter 02: Speed up Python code.](#chapter-02-speed-up-python-code)
@@ -13,6 +13,7 @@
     - [(Optional Chapter 3.5): Advanced Techniques in Speeding up Your Programming](#optional-chapter-35-advanced-techniques-in-speeding-up-your-programming)
     - [Chapter 04: Machine Learning Basics](#chapter-04-machine-learning-basics)
     - [(Optional Chapter 4.5) Advanced Theory for Theories That Matters.](#optional-chapter-45-advanced-theory-for-theories-that-matters)
+  - [Chapter 5](#chapter-5)
   - [FAQ](#faq)
     - [How to Contribute](#how-to-contribute)
     - [Can I get the Latex Source code.](#can-i-get-the-latex-source-code)
@@ -33,11 +34,11 @@ The course is scheduled every week, and the whole series will take about a year 
 
 Unfortunately, the original target audience is Chinese; therefore a Chinese version is first derived. An English version of the lecture notes will soon follow. 
 
-## Course Outline (Planned; continuously updated)
+## Course Outline 
 
 ## [Chapter 00: the Gap between Machine Learing Text Book and Engineering](./chap0.md)
 
-### Chapter 01: Python
+### [Chapter 01: Python](./chap01/ReadMe.md)
 
 - Colab and Jupyter Notebook.
 - How to set up a deep learning working environment.
@@ -47,7 +48,7 @@ Unfortunately, the original target audience is Chinese; therefore a Chinese vers
 - Decorator.
 - Dataclass and docstring.
   
-### Chapter 02: Speed up Python code. 
+### [Chapter 02: Speed up Python code.](./chap02/ReadMe.md)
 
 - Optimization work-flow. The pitfalls and the experiences.
 - General Profiling Methods with cProfile, line profiler, and intel Vtune.
@@ -55,7 +56,7 @@ Unfortunately, the original target audience is Chinese; therefore a Chinese vers
 - Parallel programming with an emphasis on Ray and Cython Openmp.
 - Exercises: Optimize Target Encoding.
 
-### Chapter 03: Data Manipulation and Visualization
+### [Chapter 03: Data Manipulation and Visualization](./chap03/ReadMe.md)
 
 - Basics of Numpy. Except for common functionality, we will emphasize Broadcast, einsum, and take function. 
 - Use Jax to Speed up Numpy. The difference between Jax's functional programming methods and Numpy; How to use JIT, Scan, and PyTree. 
@@ -72,7 +73,7 @@ Unfortunately, the original target audience is Chinese; therefore a Chinese vers
 - Use OpenMP SIMD.
 - Use oneTPP to build complex dependency graph. 
 
-### Chapter 04: Machine Learning Basics
+### [Chapter 04: Machine Learning Basics](./chap04/ReadMe.md)
 
 - Different views on Machine Learning: Practical, Statistical, Optimization.
 - The common practice of developing machine learning algorithms. 
@@ -92,6 +93,8 @@ Unfortunately, the original target audience is Chinese; therefore a Chinese vers
 - Abstract Probabilistic Framework: Semimarting and Convergence of Stochastic Processes, Empirical Processes, Probability on Banach Spaces. Markov transition and Dynamic Systems. Stochastic Analysis on Manifolds. Probability in Banach Spaces. 
 - The Dirty ToolBox Inequalities. General tricks to derive ad-hoc inequalities from inequality in analysis and inequality in probability. The advanced methods that are based on the concentration of measure tricks, chaining tricks etc.  
 - How to study these: Which book should be read carefully and which book should occur only by reference. 
+
+## [Chapter 5](./chap01/ReadMe.md)
 
 ## FAQ
 
